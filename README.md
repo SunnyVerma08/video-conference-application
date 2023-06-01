@@ -17,6 +17,7 @@ cd video-conference-application
 npm install
 ```
 
+
 ### Usage
 
 1. Start the server.
@@ -25,12 +26,22 @@ npm install
 npm start
 ```
 
-2. Open a web browser and access the application at `http://localhost:3030`.
-3. Enter a unique room ID or leave it empty to generate a random room ID.
-4. Share the room ID with other participants to join the same room.
-5. Grant access to the camera and microphone when prompted by the browser.
-6. Use the controls to mute/unmute audio, pause/resume video, and access other features like security, participants, and chat.
-7. To leave the meeting, click on the "Leave Meeting" button.
+2. In a separate terminal window, start the Peer server.
+
+```bash
+npm run peer
+```
+```bash
+nodemon
+```
+
+3. Open a web browser and access the application at `http://localhost:3030`.
+4. Grant access to the camera and microphone when prompted by the browser.
+5. Copy the URL from the address bar and open it in another tab or share it with other participants to join the video call.
+6. Other participants can open the shared URL in their web browser to join the same video call.
+7. Participants can mute/unmute audio, pause/resume video, and use the chat feature during the video conference.
+
+Please note that each participant joining the video call should have a separate browser tab or window open with the shared URL.
 
 ### Dependencies
 
